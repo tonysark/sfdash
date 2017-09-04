@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns="urn:partner.soap.sforce.com" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+<soapenv:Body>
+    <getUserInfoResponse>
+        <result>
+            <accessibilityMode>false</accessibilityMode>
+            <currencySymbol>$</currencySymbol>
+            <orgAttachmentFileSizeLimit>5242880</orgAttachmentFileSizeLimit>
+            <orgDefaultCurrencyIsoCode>USD</orgDefaultCurrencyIsoCode>
+            <orgDisallowHtmlAttachments>false</orgDisallowHtmlAttachments>
+            <orgHasPersonAccounts>false</orgHasPersonAccounts>
+            <organizationId>00DA0000000YpZ4MAK</organizationId>
+            <organizationMultiCurrency>false</organizationMultiCurrency>
+            <organizationName>Developer</organizationName>
+            <profileId>00eA0000000AAAAIA2</profileId>
+            <roleId xsi:nil="true"/>
+            <sessionSecondsValid>7200</sessionSecondsValid>
+            <userDefaultCurrencyIsoCode xsi:nil="true"/>
+            <userEmail>johndoe@email.com</userEmail>
+            <userFullName>John Doe</userFullName>
+            <userId>005A000000AAAAY</userId>
+            <userLanguage>en_US</userLanguage>
+            <userLocale>en_US</userLocale>
+            <userName>john.doe@email.com</userName>
+            <userTimeZone>America/Panama</userTimeZone>
+            <userType>Standard</userType>
+            <userUiSkin>Theme3</userUiSkin>
+        </result>
+    </getUserInfoResponse>
+</soapenv:Body>
+</soapenv:Envelope>
+
