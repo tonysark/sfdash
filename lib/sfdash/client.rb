@@ -361,13 +361,11 @@ module Sfdash
 
       response = @client.call(method.to_sym) do |locals|
         locals.message message_hash
-        #puts response  #remove
       end
 
       # Convert SOAP XML to Hash
       response = response.to_hash
-      #puts response "hash" #remove
-
+      
       # Get Response Body
       key = key_name("#{method}Response")
       response_body = response[key]
@@ -380,26 +378,18 @@ module Sfdash
       # Raise error when response contains errors
       if result.is_a?(Hash)
         xsi_type = result[key_name(:"@xsi:type")].to_s
-      #  puts result
         if result[key_name(:success)] == false && result[key_name(:errors)]
           errors = result[key_name(:errors)]
           raise Savon::Error.new("#{errors[key_name(:status_code)]}: #{errors[key_name(:message)]}")
         elsif xsi_type.include?("sObject")
           result = SObject.new(result)
-          #puts result
         elsif xsi_type.include?("QueryResult")
           result = QueryResult.new(result)
-          #puts result
         else
-
-          #puts result
-          ##result = Result.new(result)
-          #puts "removed" #puts result "final" #remove
         end
       end
 
       result
-      #puts result
     end
 
     def sobjects_hash(sobject_type, sobject_hash)

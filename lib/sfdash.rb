@@ -9,6 +9,6 @@ require "sfdash/result"
 require "sfdash/query_result"
 require "sfdash/sobject"
 
-module sfdash
+module Sfdash
 
 end
