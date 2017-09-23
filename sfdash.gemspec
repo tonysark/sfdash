@@ -5,9 +5,9 @@ require 'sfdash/version'
 
 Gem::Specification.new do |spec|
   spec.name          = "sfdash"
-  spec.version       = Soapforce::VERSION
-  spec.authors       = ["Joe Heth"]
-  spec.email         = ["joeheth@gmail.com"]
+  spec.version       = Sfdash::VERSION
+  spec.authors       = [""]
+  spec.email         = [""]
   spec.description   = %q{A stripped down version of a ruby client for the Salesforce SOAP API based on Savon.}
   spec.summary       = %q{I do not suggest using this, it has been edited by an amateur.}
   spec.homepage      = "https://github.com/tonysark/sfdash"
