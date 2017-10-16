@@ -28,7 +28,7 @@ module Sfdash
       @logger = options[:logger] || false
       # Due to SSLv3 POODLE vulnerabilty and disabling of TLSv1, use TLSv1_2
       # @ssl_version = options[:ssl_version] || :TLSv1_2
-      @ssl_version = options[:ssl_version] || :SSLv2
+      @ssl_version = options[:ssl_version] || :TLSv1_2
 
       if options[:tag_style] == :raw
         @tag_style = :raw
